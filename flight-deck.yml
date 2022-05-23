@@ -1,0 +1,8 @@
+flightdeck_web:
+  vhosts:
+    - name: "ahshabitat.test"
+      aliases:
+        - "docker.test"
+      env:
+        - name: "T7_SITE_ENVIRONMENT"
+          value: "docker"
