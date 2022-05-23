@@ -29,8 +29,8 @@ jobs:
       - name: npm ci, build and test
         working-directory: ./src
         run: |
-          sass --update --force --scss scss/:dist/css/ --style compressed
           npm install
+          sass --update --force --scss scss/:dist/css/ --style compressed
           npm run build
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
