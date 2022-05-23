@@ -19,12 +19,3 @@
   Honesty • Mindfulness • Speaking plainly • Sharing
 
 ```
-# Release Log
-
-Visit [Jira Release Log](https://teamten7.atlassian.net/projects/AHSDD?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter) to view the history of this project.
-
-Run _git log_ to determine the next release number
-
-# Credentials and Access
-
-Visit [1Password Vault](https://teamten7.1password.com/vaults/bxlcegw6efvxvapuntssloa6z4/allitems/3atv5yb6e5dojcawbwq5pjfyta) to view the preview, staging, and services credentials.
