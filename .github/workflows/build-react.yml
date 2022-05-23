@@ -27,9 +27,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
+        working-directory: ./src
         run: |
-          cd src
-          compile.sh
+          sass --update --force --scss scss/:dist/css/ --style compressed
+          npm install
+          npm run build
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
