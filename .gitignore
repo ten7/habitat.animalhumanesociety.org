@@ -1,0 +1,19 @@
+.idea/
+
+#################
+# SASS stuff   #
+#################
+.sass-cache
+
+#################
+# React stuff   #
+#################
+node_modules
+npm-debug.log
+src/dist/css
+src/dist/bundle.js
+
+#################
+# Docker stuff  #
+#################
+docker-compose.override.yml

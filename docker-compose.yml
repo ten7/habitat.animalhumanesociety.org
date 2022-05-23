@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    image: ten7/flightdeck-web-7.4
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html:cached
+      - ./flight-deck.yml:/config/web/flightdeck-web.yml:cached
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8002:8025"

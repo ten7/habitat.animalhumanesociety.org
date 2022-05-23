@@ -1,0 +1,159 @@
+$orange:  #e0793d;
+$gray: #eef3f5;
+
+html {
+  width: 100%;
+  display: table;
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #fff;
+  overflow-y: scroll;
+  font-family: "proxima-soft", Helvetica, Arial, sans-serif;
+}
+/* Vertical centering */
+html,
+body,
+#reactApp,
+.main-container,
+.card-grid-front {
+  height: 100%;
+}
+.is-active {
+  /*opacity: 0.6;*/
+  border: 5px solid $orange;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  color: #006289;
+  font-size: 3rem;
+  font-weight: 700;
+}
+ul {
+  padding-left: 0;
+}
+li {
+  list-style-type: none;
+}
+h3.card-title {
+  color: #006289;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.btn-ahs {
+  background-color: $orange;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+.btn-ahs--sidebar {
+  padding: .4rem;
+  font-size: .9rem;
+}
+.btn-ahs--main {
+  padding: .6rem;
+  font-size: 1.1rem;
+}
+.text-medium {
+  font-size: 1.3rem;
+}
+.color-teal {
+  color: #006289;
+}
+.fine-print {
+  font-size: .7rem;
+}
+
+.modal-body {
+  h2, h3, h4, h5, h6 {
+    color: #006289;
+  }
+  li {
+    list-style-type: disc;
+    margin-left: 1em;
+  }
+}
+
+// Card component
+.card-grid-front {
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+}
+.card-grid {
+  max-height: 80%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-body {
+  background-color: #fff;
+}
+.card-status {
+  color: $orange;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 24px;
+  display: block;
+}
+
+// Detail component
+.detail--thumb-list {
+  width: 20%;
+  position: fixed;
+  background-color: $gray;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.detail--thumb-list {
+  > div {
+    width: 33%;
+  }
+  img {
+    width: 100%;
+  }
+}
+.detail--info-pane {
+  margin-left: 20%;
+  width: 80%;
+  position: relative;
+}
+.detail--info-pane--description {
+  margin-top: 220px;
+  width: 50%;
+  overflow-y: auto;
+  position: relative;
+  font-size: 1.1rem;
+  > div {
+    margin-bottom: .5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.detail--info-pane--title {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.detail--info-pane--image {
+  width: 30%;
+  position: fixed;
+  top: 100px;
+  right: 5%;
+  bottom: 0;
+  img {
+    width: 100%;
+  }
+}
